@@ -1,0 +1,80 @@
+
+body {
+    font-family: "Lato", sans-serif;
+  }
+
+  .fixed-top {
+   
+    /* background-color: black; */
+    color: white;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  
+  @media (max-width: 768px) {
+    .desktop-login {
+      display: none !important; /* Hide desktop login button on mobile */
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .mobile-login {
+      display: none !important; /* Hide mobile login button on desktop */
+    }
+  }
+  
+   .top-bar {
+    color: white !important; /* Default color for links */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+    font-size: 1.3rem !important;
+  }
+  
+  .top-bar:hover {
+    color: grey !important;
+    
+  }
+  .custom-dropdown-toggle .dropdown-toggle::after {
+    color: white; /* Set the color of the dropdown arrow */
+}
+
+
+  /* dropdown */
+  /* Hide the default down arrow */
+.custom-dropdown .dropdown-toggle::after {
+    display: none;
+}
+
+/* Ensure dropdown opens on click */
+.custom-dropdown .dropdown-menu {
+    display: none;
+}
+
+.custom-dropdown .dropdown-menu.show {
+    display: block;
+}
+
+/* Adjust the position of the dropdown items */
+.custom-dropdown .dropdown-menu {
+    position: absolute;
+    top: 50px !important;
+    left: -250px !important;
+    z-index: 1000;
+    margin-top: 4rem;
+    width: 200px; 
+    background-color: #171717; /* Set background color */
+    border: 1px solid #333;
+}
+
+/* Optional: Adjust the width based on your design needs */
+.custom-dropdown .dropdown-menu {
+    width: 300px; /* Adjust width as needed */
+}
+/* Optional: Style dropdown items */
+.custom-dropdown .dropdown-menu .dropdown-item {
+    color: #ffffff; /* Set text color to white for contrast */
+}
+
+.custom-dropdown .dropdown-menu .dropdown-item:hover {
+    background-color: #333333; /* Highlight color on hover */
+}
